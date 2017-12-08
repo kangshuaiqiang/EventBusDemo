@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="demo.ksq.com.eventbusdemo.MainActivity">
+    <!--
+        <Button
+            android:id="@+id/btn"
+            android:text="btn_try"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="demo.ksq.com.eventbusdemo.test2.ListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></fragment>
+    <!--需要设置id-->
+
+    <fragment
+        android:id="@+id/frag2"
+        android:name="demo.ksq.com.eventbusdemo.test2.RightFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"></fragment>
+
+</LinearLayout>
